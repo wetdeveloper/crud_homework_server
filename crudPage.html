@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/crud-page/crud/" method="post">
+            <label for="Username">
+                Username
+            </label>
+            <input type="text" name="username" id="Username">
+            <br>
+            <label for="Password">
+                Password
+            </label>
+            <input type="text" name="password" id="Password">
+            <select name="operation">
+                <option value="C">
+                    Create user
+                </option>
+                <option value="U">
+                    update user's Password
+                </option>
+                <option value="D">
+                    delete the user
+                </option>
+            </select>
+            <input type="submit">
+        </form>
+        <form action="/userslist/" method="get">
+            <button type="submit">See users</button>
+        </form>
+    </body>
+</html>
